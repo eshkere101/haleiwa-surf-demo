@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142d34">
+<title>Haleʻiwa — A little surf. A lot of soul.</title>
+<meta name="description" content="An independent redesign concept for Haleiwa Surf Shop. Explore boards, beachside rentals and a little North Shore aloha.">
+<link rel="preload" href="assets/display.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/wave.jpg" as="image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 20 20 4M4 4h16v16"/></symbol>
+<symbol id="down" viewBox="0 0 24 24"><path d="M12 3v18m-7-7 7 7 7-7"/></symbol>
+<symbol id="wave-icon" viewBox="0 0 60 32"><path d="M2 28h56M3 21c10 0 11-17 24-17 12 0 15 13 7 15-5 1-8-4-5-7-9 1-6 16 10 16"/></symbol>
+</defs></svg>
+<header class="header">
+<a href="#top" class="brand" aria-label="Haleiwa Surf Shop, home"><svg class="brand-wave"><use href="#wave-icon"/></svg><span>HALEʻIWA<small>SURF SHOP</small></span></a>
+<nav class="desktop-nav" aria-label="Main navigation"><a href="#quiver">Find your board</a><a href="#aloha">Our little shop</a><a href="#visit">Find us</a></nav>
+<div class="header-actions"><button id="motion" class="motion" type="button" aria-pressed="false" aria-label="Pause motion"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Motion on</span></button><a href="#quiver" class="nav-cta">Let’s go surf <svg><use href="#arrow"/></svg></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">+</span></button></div>
+</header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#quiver">Find your board</a><a href="#aloha">Our little shop</a><a href="#visit">Find us</a><a href="#comparison">Before / after</a></nav>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+<img id="wave-photo" class="hero-photo" src="assets/wave.jpg" alt="A surfer riding inside a turquoise wave" width="2400" height="1600" fetchpriority="high">
+<canvas id="water" aria-hidden="true"></canvas><div class="hero-shade"></div>
+<div class="hero-topline"><span>Haleʻiwa, Oʻahu. A different kind of rush.</span><span class="coordinate">21°35′ N &nbsp; 158°06′ W</span></div>
+<div class="hero-title-wrap"><h1 id="hero-title">HALEʻIWA</h1><div class="hero-subtitle"><span>A LITTLE SURF.</span><svg><use href="#wave-icon"/></svg><span>A LOT OF SOUL.</span></div></div>
+<div class="hero-bottom"><p>Your little beachfront surf shop<br>on Oʻahu’s North Shore.</p><a href="#aloha" class="scroll-link">Follow the swell <svg><use href="#down"/></svg></a></div>
+<a class="surf-stamp" href="#quiver"><span>GET<br>WET.</span><svg><use href="#arrow"/></svg><small>Find your ride</small></a>
+<div class="hero-caption">Ocean photograph by byronetmedia / Unsplash</div>
+</section>
+<div class="ticker" aria-label="Surfboards, rentals, and good days on the North Shore"><div class="ticker-track" aria-hidden="true"><span>LESS SCROLL. MORE SURF.</span><svg><use href="#wave-icon"/></svg><span>NORTH SHORE STATE OF MIND.</span><svg><use href="#wave-icon"/></svg><span>LESS SCROLL. MORE SURF.</span><svg><use href="#wave-icon"/></svg><span>NORTH SHORE STATE OF MIND.</span><svg><use href="#wave-icon"/></svg></div></div>
+<section class="aloha section-pad" id="aloha" aria-labelledby="aloha-title">
+<div class="aloha-copy"><h2 id="aloha-title" class="reveal">SMALL SHOP.<br>BIG ALOHA.</h2><p>Off the beaten path. Right where you want to be.</p><p>Find our little beachfront hut across from Haleʻiwa Aliʻi Beach Park. Surfboards, original tees, swimwear and the gear to turn “just looking” into a day in the water.</p><a class="text-link" href="#visit">Come find us <svg><use href="#arrow"/></svg></a></div>
+<div class="photo-stack" data-tilt><figure class="shop-photo"><img src="assets/shop.jpg" alt="The actual Haleiwa Surf Shop beachfront hut, surrounded by palms" loading="lazy" width="664" height="498"><figcaption>The little hut with the big welcome.</figcaption></figure><figure class="detail-photo"><img src="assets/surf-3.jpg" alt="Colorful boards inside Haleiwa Surf Shop" loading="lazy" width="524" height="532"></figure><span class="photo-note">Meet you<br>by the beach.</span></div>
+</section>
+<section class="quiver section-pad" id="quiver" aria-labelledby="quiver-title">
+<div class="section-heading"><h2 id="quiver-title" class="reveal">YOUR DAY.<br>YOUR BOARD.</h2><p>First wave or next obsession?<br>There’s a ride for that.</p></div>
+<div class="board-explorer">
+<div class="board-stage" data-tilt><span class="board-ghost" aria-hidden="true">SOFTTOP</span><div class="board-model" aria-hidden="true"><div class="board-thickness"></div><div class="board-face"><div class="board-stripe"></div><svg><use href="#wave-icon"/></svg><span>HALEʻIWA</span><span class="board-line"></span></div><div class="board-fin"></div></div><span class="model-note">Illustrative board / move your pointer</span><div class="stage-cross" aria-hidden="true">+</div></div>
+<div class="board-copy"><div class="board-tabs" role="tablist" aria-label="Explore rental board types"><button role="tab" id="tab-soft" aria-selected="true" aria-controls="board-panel" data-board="softtop">First waves</button><button role="tab" id="tab-long" aria-selected="false" aria-controls="board-panel" data-board="longboard" tabindex="-1">Cruise mode</button><button role="tab" id="tab-short" aria-selected="false" aria-controls="board-panel" data-board="shortboard" tabindex="-1">Chase waves</button></div><div id="board-panel" role="tabpanel" aria-labelledby="tab-soft" tabindex="0"><h3 id="board-name">THE SOFTTOP.</h3><p id="board-description">A friendly place to start. A stable, forgiving board for finding your feet and catching your first waves.</p><dl class="board-facts"><div><dt>The feeling</dt><dd id="board-feeling">Easy does it</dd></div><div><dt>The ride</dt><dd id="board-ride">Beginner soft-top</dd></div></dl><p class="rental-price" id="board-price"><strong>$15</strong> / hour <span>2-hour minimum</span></p><a class="button dark" id="rental-link" href="https://www.hisurfrentals.com/" target="_blank" rel="noopener noreferrer">Explore rentals <svg><use href="#arrow"/></svg></a><p class="booking-note">Booking opens on the shop’s original rental site.<br>Confirm availability and current rates there.</p></div></div>
+</div>
+</section>
+<section class="ocean-break" aria-labelledby="ocean-title"><video id="coast-video" muted loop playsinline preload="none" poster="assets/ocean.jpg" aria-label="Original aerial footage of the coast beside Haleiwa Surf Shop"><source src="assets/haleiwa.mp4" type="video/mp4"></video><div class="ocean-scrim"></div><div><h2 id="ocean-title">OUT HERE,<br>TIME GETS LOST.</h2><a class="button light" href="#visit">Find your way here <svg><use href="#arrow"/></svg></a></div><span>Oʻahu, Hawaiʻi / Footage from the original shop website</span></section>
+<section class="shop-section section-pad" id="shop" aria-labelledby="shop-title"><div class="section-heading"><h2 id="shop-title" class="reveal">TAKE A LITTLE<br>ALOHA HOME.</h2><p>Good boards. Original gear.<br>A reminder of the good days.</p></div><div class="shop-grid"><a class="shop-tile boards-tile" href="https://www.haleiwasurfshop.com/surfboards" target="_blank" rel="noopener noreferrer"><img src="assets/surf-3.jpg" alt="Surfboards displayed at Haleiwa Surf Shop" loading="lazy" width="524" height="532"><div><h3>Find your next board</h3><svg><use href="#arrow"/></svg></div><p>Shortboards, mid-lengths, longboards & more</p></a><a class="shop-tile apparel-tile" href="https://www.haleiwasurfshop.com/shop" target="_blank" rel="noopener noreferrer"><img src="assets/surf.jpg" alt="Original Haleiwa Surf Shop T-shirts" loading="lazy" width="440" height="588"><div><h3>Wear the North Shore</h3><svg><use href="#arrow"/></svg></div><p>Original Haleʻiwa Surf Shop apparel</p></a></div></section>
+<section class="visit section-pad" id="visit" aria-labelledby="visit-title"><div class="visit-main"><h2 id="visit-title">HARD TO FIND.<br>HARDER TO LEAVE.</h2><div class="visit-details"><div><p>66-214 Haleʻiwa Road<br>Haleʻiwa, HI 96712</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Haleiwa+Surf+Shop+66-214+Haleiwa+Rd" target="_blank" rel="noopener noreferrer">Get directions <svg><use href="#arrow"/></svg></a></div><div><p>Open every day<br>9:00 am — 6:00 pm</p><a class="text-link" href="tel:+18087440401">808 744 0401 <svg><use href="#arrow"/></svg></a></div></div><a class="visit-instagram" href="https://www.instagram.com/haleiwa.surf.shop/" target="_blank" rel="noopener noreferrer">A little daily aloha @haleiwa.surf.shop <svg><use href="#arrow"/></svg></a></div><div class="visit-art" aria-hidden="true"><svg viewBox="0 0 300 300"><path d="M-20 190c70 0 90-140 180-140 70 0 100 78 48 100-38 17-70-18-40-38-70 3-55 120 64 120h90M-20 268h340"/></svg><span>SEE YOU<br>IN THE WATER.</span></div></section>
+<section class="comparison section-pad" id="comparison" aria-labelledby="comparison-title"><div><h2 id="comparison-title">SAME SOUL.<br>NEW SWELL.</h2><p>An independent design exploration.<br>See where this concept started.</p></div><div class="comparison-controls"><button class="button dark" id="before-toggle" type="button" aria-expanded="false" aria-controls="before-panel">See the original design <svg><use href="#arrow"/></svg></button><a class="text-link" href="https://www.haleiwasurfshop.com/" target="_blank" rel="noopener noreferrer">Open original website <svg><use href="#arrow"/></svg></a></div><div id="before-panel" hidden><img src="assets/before.png" alt="Screenshot of the original Haleiwa Surf Shop website before this independent redesign" loading="lazy" width="1440" height="1000"><p>Original website capture / October 28, 2026. This concept is not affiliated with or commissioned by the shop.</p></div></section>
+</main>
+<footer><a class="footer-word" href="#top" aria-label="Back to top">HALEʻIWA<svg><use href="#arrow"/></svg></a><div class="footer-bottom"><p>Independent redesign concept by Natalya.<br>Brand, shop photography & coastal footage belong to their respective owners.</p><p>Wave photo: <a href="https://unsplash.com/photos/KVwH_pZGHcE" target="_blank" rel="noopener noreferrer">byronetmedia / Unsplash</a>.<br>Original business: <a href="https://www.haleiwasurfshop.com/" target="_blank" rel="noopener noreferrer">Haleʻiwa Surf Shop</a>.</p><a href="#top">Back to the swell ↑</a></div></footer>
+<script src="app.js"></script>
+</body></html>
